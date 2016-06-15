@@ -2,12 +2,13 @@
     <td><a href="{% baseurl %}/{% filename %}">{% filename %}</a></td>
     <td>{% title %}</td>
     <td>{% contenttype %}</td>
-    <td>{% path %}</td>
-    <td>{% since %}</td>
+    <td><a title="{% path %}">hover</a></td>
+    <td>{% >since %}</td>
     <td>
     <form method="post" action="{% baseurl %}/{% filename %}">
-    <input type="text" name="delete" placeholder="Typ 'delete' om te verwijderen">
+    <input type="text" name="delete" placeholder="typ 'delete'">
     <input type="submit" value="delete">
     </form>
     </td>
+    <td>{% itemaddon %}</td>
 </tr>
