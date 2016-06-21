@@ -1,3 +1,2 @@
-UPDATE File
-SET until=NOW()
+DELETE FROM File
 WHERE filename=@filename;
