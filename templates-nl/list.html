@@ -1,17 +1,5 @@
-<form method="post" enctype="multipart/form-data">
-    <legend>Bestand uploaden</legend>
-    <label for="title">
-        Titel
-    </label>
-    <input type="text" name="title">
-    <label for="data">
-        Bestand
-    </label>
-    <input type="file" name="data">
-    <input type="submit" value="Uploaden">
-</form>
-
-<table>
+{% form %}
+<table id="filetable">
     <thead>
         <tr>
             <th colspan="100">Bestaande bestanden</th>
@@ -23,6 +11,7 @@
             <th>Op schijf</th>
             <th>Sinds</th>
             <th>Verwijder</th>
+            <th>Extra</th>
         </tr>
     </thead>
     <tbody>
