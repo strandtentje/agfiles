@@ -1,11 +1,11 @@
 <tr>
-    <td><a href="{% baseurl %}/{% filename %}">{% filename %}</a></td>
+    <td><a href="{% baseurl %}/{% fileid %}">{% filename %}</a></td>
     <td>{% title %}</td>
     <td>{% contenttype %}</td>
     <td><a title="{% path %}">hover</a></td>
     <td>{% >since %}</td>
     <td>
-    <form method="post" action="{% baseurl %}/{% filename %}">
+    <form method="post" action="{% baseurl %}/{% fileid %}">
     <input type="text" name="delete" placeholder="typ 'delete'">
     <input type="submit" value="delete">
     </form>
